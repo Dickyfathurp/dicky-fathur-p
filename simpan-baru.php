@@ -18,7 +18,7 @@ $query = "insert into data_mahasiswa (nim, nama, jurusan) values".
     "(". $_POST["nim"]. ", '" .$_POST["nama"]. "','" . $_POST["jurusan"] . "')";
     //echo $query;
     if($koneksi->query($query) == true) {
-    	echo "<br>Data " . $_POST["nim"] . " sudah tersimpan.".'<a href ="main.php">disini</a>'; 
+    	echo "<br>Data " . $_POST["nim"] . " sudah tersimpan.".'<a href ="index.php">disini</a>'; 
 }else{
 	echo "error : " . $query . " ->"  . $koneksi->error;
 }
